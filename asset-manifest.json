@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.7a2e0d2b.js",
+    "main.css": "/static/css/main.dcfd6b1f.css",
+    "main.js": "/static/js/main.2a0849fa.js",
+    "static/media/Max Bill Composition géométrique 2.jpeg": "/static/media/Max Bill Composition géométrique 2.35a1829050fe8f02c495.jpeg",
+    "static/media/Max Bill Composition géométrique.jpeg": "/static/media/Max Bill Composition géométrique.82f09b0fe95058e59649.jpeg",
+    "static/media/Verena Loewensberg Senza titolo.jpeg": "/static/media/Verena Loewensberg Senza titolo.ea50b64f049b8b80e87a.jpeg",
     "index.html": "/index.html",
-    "main.7a2e0d2b.js.map": "/static/js/main.7a2e0d2b.js.map"
+    "main.dcfd6b1f.css.map": "/static/css/main.dcfd6b1f.css.map",
+    "main.2a0849fa.js.map": "/static/js/main.2a0849fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.7a2e0d2b.js"
+    "static/css/main.dcfd6b1f.css",
+    "static/js/main.2a0849fa.js"
   ]
 }

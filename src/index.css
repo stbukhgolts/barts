@@ -1,4 +1,11 @@
 :root {
   --main-color: rgba(0,38,29,1);
   --font-color: rgba(255,255,255,1);
+  font-family: Open Sans,sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }

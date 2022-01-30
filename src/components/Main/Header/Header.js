@@ -4,10 +4,10 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <div className='header'>
+    <header className='header'>
       <Link to='/'>Home</Link>
       <Link to="artists">Artists</Link>
-    </div>
+    </header>
   );
 };
 

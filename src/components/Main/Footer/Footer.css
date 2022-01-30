@@ -1,6 +1,6 @@
 .footer {
-  margin-top: calc(100vh - 190px);
-  padding: 50px;
+  margin-top: calc(100vh - 490px);
+  padding: 50px 0;
   background-color: var(--main-color);
   width: 100%;
 }

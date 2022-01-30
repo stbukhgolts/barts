@@ -1,0 +1,25 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(34, 30, 30, 0.788);
+  color: var(--font-color);
+  padding: 35px 22px;
+
+  h2 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 5px 0 0 0;
+    text-align: center;
+    font-size: .92857em;
+  }
+}
+
+.home-page-works {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.33%;
+}

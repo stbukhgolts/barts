@@ -1,0 +1,16 @@
+.work-preview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.work-preview img {
+  width: 100%;
+  height: auto;
+}

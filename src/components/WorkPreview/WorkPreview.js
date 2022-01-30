@@ -1,20 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './WorkPreview.css';
+import './WorkPreview.scss';
 
 const WorkPreview = ({ work, artist }) => {
 
   return (
-    <div className="work-preview">
-      <Link to={`/artists/${artist}/`} key={artist}>
-        {artist}
+    <li className="work-preview">
+    
+      <Link to={`/artists/${artist}/${work.name}`} key={work.name}>
+      <img src={work.src} alt="" />
+      {artist} - {work.name}
+
       </Link>
 
-      <Link to={`/artists/${artist}/${work.name}`} key={work.name}>
-        {work.name}
-      </Link>
-      <img src={work.src} alt="" />
-    </div>
+    </li>
   );
 };
 

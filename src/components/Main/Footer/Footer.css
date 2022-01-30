@@ -2,4 +2,5 @@
   margin-top: calc(100vh - 190px);
   padding: 50px;
   background-color: var(--main-color);
+  width: 100%;
 }

@@ -15,7 +15,7 @@ const Artist = () => {
 
       {
         works.map(work => (
-          <WorkPreview work={work} key={work.name} />
+          <WorkPreview work={work} key={work.name} artist={artist.name}/>
           )
         )
       }

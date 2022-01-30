@@ -1,0 +1,10 @@
+.artist-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-preview img {
+  width: 100px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { getArtists } from '../../data';
+import ArtistPreview from '../ArtistPreview/ArtistPreview';
 import './Artists.css'
 
 const Artists = () => {
@@ -10,10 +10,10 @@ const Artists = () => {
   return (
   <div className='artists'>
     <h2>Список художников</h2>
-    <p>Художники в алфавитном порядке. У нас есть оригинальные графические работы для продажи:</p>
+    <p>У нас есть оригинальные графические работы для продажи:</p>
     
     {artists.map(artist => (
-      <Link to={`/artists/${artist.name}`} key={artist.name}>{artist.name}</Link>
+      <ArtistPreview artist={artist} key={artist.name} />
     ))}
   </div>
   );

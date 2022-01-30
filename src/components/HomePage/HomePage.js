@@ -11,7 +11,7 @@ const HomePage = () => {
       <div>About Us</div>
 
       {works.map((work) => (
-        <WorkPreview work={work} key={work.name} />
+        <WorkPreview work={work[0]} key={work[0].name} artist={work[1]}/>
       ))}
     </>
   );

@@ -1,43 +1,28 @@
-import img1 from './images/WhatsApp Image 2022-01-04 at 14.02.14 (1).jpeg'
-import img2 from './images/WhatsApp Image 2022-01-04 at 14.02.14.jpeg'
-import img3 from './images/WhatsApp Image 2022-01-04 at 14.02.15 (1).jpeg'
+import img1 from './images/Verena Loewensberg Senza titolo.jpeg'
+import img2 from './images/Max Bill Composition géométrique.jpeg'
+import img3 from './images/Max Bill Composition géométrique 2.jpeg'
 
 let artists = [
   {
-    name: 'Warhol',
+    name: 'Verena Loewensberg (1912-1986)',
+    src: img1,
     works: [
       {
-        name: 'soup',
+        name: 'Senza titolo',
         src: img1,
       },
+    ],
+  },
+  {
+    name: 'Max Bill (1908-1994)',
+    src: img2,
+    works: [
       {
-        name: 'portrait',
+        name: 'Composition géométrique',
         src: img2,
       },
-    ],
-  },
-  {
-    name: 'Malevich',
-    works: [
       {
-        name: 'red square',
-        src: '',
-      },
-      {
-        name: 'black square',
-        src: '',
-      },
-    ],
-  },
-  {
-    name: 'Rubens',
-    works: [
-      {
-        name: 'girl',
-        src: '',
-      },
-      {
-        name: 'another girl',
+        name: 'Composition géométrique',
         src: img3,
       },
     ],
@@ -55,6 +40,6 @@ export function getWorks(artistName) {
 
 export function getAllWorks() {
   return artists.reduce((acc, cur) => {
-    return acc.concat(cur.works);
+    return acc.concat(cur.works.map(work => [work, cur.name]));
   }, []);
 }

@@ -1,16 +1,19 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
-import './WorkPreview.css'
+import { Link } from 'react-router-dom';
+import './WorkPreview.css';
 
-const WorkPreview = ({work}) => {
-  let params = useParams();
+const WorkPreview = ({ work, artist }) => {
 
   return (
     <div className="work-preview">
-      <Link to={`/artists/${params.artist}/${work.name}`} key={work.name}>
+      <Link to={`/artists/${artist}/`} key={artist}>
+        {artist}
+      </Link>
+
+      <Link to={`/artists/${artist}/${work.name}`} key={work.name}>
         {work.name}
       </Link>
-      <img src={work.src} alt=''/>
+      <img src={work.src} alt="" />
     </div>
   );
 };

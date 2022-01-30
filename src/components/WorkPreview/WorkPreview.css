@@ -1,3 +1,8 @@
+.work-preview {
+  display: flex;
+  flex-direction: column;
+}
+
 .work-preview img {
   width: 100px;
   height: auto;

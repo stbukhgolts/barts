@@ -1,13 +1,15 @@
 import React from 'react';
-import './ArtistPreview.css'
+import './ArtistPreview.scss'
 import { Link } from 'react-router-dom';
 
 
 const ArtistPreview = ({artist}) => {
   return (
   <div className='artist-preview'>
+      <Link to={`/artists/${artist.name}`} key={artist.name}>
       <img src={artist.src} alt="" />
-      <Link to={`/artists/${artist.name}`} key={artist.name}>{artist.name}</Link>
+      
+      {artist.name}</Link>
 
   </div>
   );

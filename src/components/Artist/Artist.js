@@ -6,23 +6,21 @@ import './Artist.css';
 
 const Artist = () => {
   let params = useParams();
-  let artist = getWorks(params.artist)
+  let artist = getWorks(params.artist);
   let works = artist.works;
-  
+
   return (
     <>
-      <div>{params.artist}</div>
+      <h2>{params.artist}</h2>
+      <p>{artist.about}</p>
 
-      {
-        works.map(work => (
-          <WorkPreview work={work} key={work.name} artist={artist.name}/>
-          )
-        )
-      }
-
+      <ul>
+        {works.map((work) => (
+          <WorkPreview work={work} key={work.name} artist={artist.name} />
+        ))}
+      </ul>
     </>
   );
 };
 
 export default Artist;
-

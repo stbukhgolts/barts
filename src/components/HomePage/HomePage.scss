@@ -10,11 +10,11 @@
   h2 {
     margin: 0;
   }
-  
+
   p {
     margin: 5px 0 0 0;
     text-align: center;
-    font-size: .92857em;
+    font-size: 0.92857em;
   }
 }
 
@@ -22,4 +22,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.33%;
+}
+
+@media all and (min-width: 1024px) {
+  .home-page-works {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

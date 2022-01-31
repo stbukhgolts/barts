@@ -1,10 +1,12 @@
-import img1 from './images/Verena Loewensberg Senza titolo.jpeg'
-import img2 from './images/Max Bill Composition géométrique.jpeg'
-import img3 from './images/Max Bill Composition géométrique 2.jpeg'
+import img1 from './images/Verena Loewensberg Senza titolo.jpeg';
+import img2 from './images/Max Bill Composition géométrique.jpeg';
+import img3 from './images/Max Bill Composition géométrique 2.jpeg';
 
 let artists = [
   {
     name: 'Verena Loewensberg (1912-1986)',
+    about:
+      'Верена Лёвенсберг (28 мая 1912 - 27 апреля 1986) Швейцарская художница Верена Лёвенсберг обучалась у Августа Эрбина в Академии модерна в Париже. В 1937 году она стала соучредителем «Allianz» в Цюрихе, ассоциации современных швейцарских художников, в которую также входили представители сюрреализма, позднего кубизма и конструктивизма. Лёвенсберг считается одним из ведущих представителей Concrete Art в Швейцарии («Zürcher Konkreten»), наряду с Максом Биллом, Камиллой Грезер и Рихардом Полом Лозе.',
     src: img1,
     works: [
       {
@@ -22,6 +24,8 @@ let artists = [
   },
   {
     name: 'Max Bill (1908-1994)',
+    about:
+      'Макс Билл был великим швейцарским эрудитом: художником, архитектором, промышленным дизайнером, графическим дизайнером и учителем. Он посещал Баухаус, где его обучали Йозеф Альберс, Ласло Мохой-Надь, Пауль Клее, Василий Кандинский и Оскар Шлеммер. Билл по-прежнему был тесно связан со школой Баухаус и был ключевой фигурой в разработке и распространении ее принципов, особенно благодаря своей профессуре в Kunstgewerbeschule Zürich и в качестве основателя Ульмской школы дизайна. Благодаря своему стремлению к новому визуальному языку, который можно было бы понять только органами чувств, Билл определил правила швейцарского дизайна на десятилетия вперед. Его влияние распространилось даже на Южную Америку, где он стал катализатором движения конкретного искусства.',
     src: img2,
     works: [
       {
@@ -61,6 +65,6 @@ export function getWorks(artistName) {
 
 export function getAllWorks() {
   return artists.reduce((acc, cur) => {
-    return acc.concat(cur.works.map(work => [work, cur.name]));
+    return acc.concat(cur.works.map((work) => [work, cur.name]));
   }, []);
 }

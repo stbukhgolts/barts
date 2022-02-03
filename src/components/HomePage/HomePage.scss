@@ -5,16 +5,22 @@
   align-items: center;
   background-color: rgba(34, 30, 30, 0.788);
   color: var(--font-color);
-  padding: 35px 22px;
+  padding: 75px 42px 50px;
+  background-position: center center;
+  // background-size: 10%;
 
   h2 {
     margin: 0;
+    font-size: 1.92857em;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 1;
   }
 
   p {
-    margin: 5px 0 0 0;
+    margin: 15px 0 0 0;
     text-align: center;
-    font-size: 0.92857em;
+    font-size: 14px;
   }
 }
 
@@ -24,7 +30,21 @@
   gap: 3.33%;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 750px) {
+  .about-us {
+    padding: 75px 22px 50px;
+    // background-size: 325%;
+    h2 {
+      font-size: 1.78571em;
+    }
+  
+    p {
+      font-size: 0.92857em;
+    }
+  }
+
+
+
   .home-page-works {
     grid-template-columns: 1fr 1fr 1fr;
   }

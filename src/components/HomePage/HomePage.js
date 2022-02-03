@@ -1,6 +1,7 @@
 import React from 'react';
 import { getAllWorks } from '../../data';
 import WorkPreview from '../WorkPreview/WorkPreview';
+import img from '../../images/background.jpg'
 import './HomePage.scss';
 
 const HomePage = () => {
@@ -8,7 +9,7 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="about-us">
+      <div className="about-us" style={{ backgroundImage: `url(${img})` }} >
         <h2>Искусство универсально.</h2>
         <p>
           Произведение искусства должно быть полностью задумано и сформировано

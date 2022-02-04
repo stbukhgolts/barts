@@ -1,4 +1,7 @@
 .artist-preview {
+  width: 100%;
+  position: relative;
+
   a {
     display: flex;
     flex-direction: column;
@@ -7,9 +10,27 @@
     color: black;
     text-decoration: none;
   }
+
+  a:hover div {
+    display: block;
+  }
+
+  div {
+    background-color: var(--main-color);
+    position: absolute;
+    // display: block;
+    display: none;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
 }
 
+.artist-preview:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
 
 .artist-preview img {
-  width: 100px;
+  width: 100%;
 }

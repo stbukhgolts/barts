@@ -11,6 +11,8 @@ const WorkPreview = ({ work, artist }) => {
       <img src={work.src} alt="" />
       {artist} - {work.name}
 
+      
+
       </Link>
 
     </li>

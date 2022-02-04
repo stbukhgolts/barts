@@ -1,0 +1,32 @@
+.artist {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+}
+
+.artist__desc {
+  width: 50%;
+  
+  p {
+    font-size: 14px;
+  }
+}
+
+.artist__works {
+  width: 50%;
+}
+
+
+@media all and (max-width: 600px) {
+  .artist {
+    flex-direction: column;
+  }
+
+  .artist__desc {
+    width: 100%;
+  }
+
+  .artist__works {
+    width: 100%;
+  }
+}

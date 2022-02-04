@@ -1,0 +1,17 @@
+.artists {
+  margin-top: 66px;
+}
+
+.artists-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media all and (max-width: 600px) {
+  .artists-list {
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease-in;
+  }
+}

@@ -1,7 +1,7 @@
 :root {
-  --main-color: rgba(0,38,29,1);
+  --main-color: rgb(249, 253, 252);
   --font-color: rgba(255,255,255,1);
-  font-family: Open Sans,sans-serif;
+  font-family: sans-serif;
   line-height: 1.5;
 }
 

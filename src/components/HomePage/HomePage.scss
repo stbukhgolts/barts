@@ -3,11 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(34, 30, 30, 0.788);
+  background-color: rgba(34, 30, 30, 0.329);
   color: var(--font-color);
   padding: 75px 42px 50px;
   background-position: center center;
-  // background-size: 10%;
+  opacity: 0.77;
+  margin-bottom: 35px;
 
   h2 {
     margin: 0;
@@ -22,6 +23,12 @@
     text-align: center;
     font-size: 14px;
   }
+}
+
+.home-page-works-featured {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .home-page-works {
@@ -45,6 +52,10 @@
     }
   }
 
+  .home-page-works-featured {
+    font-size: 1em;
+  }
+  
 
 
   .home-page-works {

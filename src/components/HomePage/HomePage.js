@@ -26,7 +26,7 @@ const HomePage = () => {
         </p>
       </div>
 
-      <h2>Рекомендуемая коллекция</h2>
+      <h2 className='home-page-works-featured'>РЕКОМЕНДУЕМАЯ КОЛЛЕКЦИЯ</h2>
       <ul className="home-page-works">
         {works.map((work) => (
           <WorkPreview work={work[0]} key={work[0].name} artist={work[1]} />

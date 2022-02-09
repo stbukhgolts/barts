@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.0f15f6e6.css",
-    "main.js": "/static/js/main.ff6c649b.js",
+    "main.css": "/static/css/main.2a1cb785.css",
+    "main.js": "/static/js/main.47b52402.js",
     "static/media/background.jpg": "/static/media/background.083f8e1965d9fb6c8f38.jpg",
     "static/media/Max Bill Composition géométrique 2.jpeg": "/static/media/Max Bill Composition géométrique 2.35a1829050fe8f02c495.jpeg",
     "static/media/Max Bill Composition géométrique.jpeg": "/static/media/Max Bill Composition géométrique.82f09b0fe95058e59649.jpeg",
     "static/media/Verena Loewensberg Senza titolo.jpeg": "/static/media/Verena Loewensberg Senza titolo.ea50b64f049b8b80e87a.jpeg",
+    "static/media/logo.png": "/static/media/logo.576e336942db9ef17c6c.png",
     "index.html": "/index.html",
-    "main.0f15f6e6.css.map": "/static/css/main.0f15f6e6.css.map",
-    "main.ff6c649b.js.map": "/static/js/main.ff6c649b.js.map"
+    "main.2a1cb785.css.map": "/static/css/main.2a1cb785.css.map",
+    "main.47b52402.js.map": "/static/js/main.47b52402.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f15f6e6.css",
-    "static/js/main.ff6c649b.js"
+    "static/css/main.2a1cb785.css",
+    "static/js/main.47b52402.js"
   ]
 }

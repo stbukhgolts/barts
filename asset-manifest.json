@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.84736297.css",
-    "main.js": "/static/js/main.b190e1b9.js",
-    "static/media/background.jpg": "/static/media/background.083f8e1965d9fb6c8f38.jpg",
+    "main.css": "/static/css/main.993778b7.css",
+    "main.js": "/static/js/main.524fbe7f.js",
+    "static/media/background.jpg": "/static/media/background.d87ec47e4970b24830b9.jpg",
     "static/media/Max Bill Composition géométrique 2.jpeg": "/static/media/Max Bill Composition géométrique 2.35a1829050fe8f02c495.jpeg",
     "static/media/Max Bill Composition géométrique.jpeg": "/static/media/Max Bill Composition géométrique.82f09b0fe95058e59649.jpeg",
     "static/media/Verena Loewensberg Senza titolo.jpeg": "/static/media/Verena Loewensberg Senza titolo.ea50b64f049b8b80e87a.jpeg",
-    "static/media/logo.png": "/static/media/logo.576e336942db9ef17c6c.png",
+    "static/media/logo.png": "/static/media/logo.2ef4c573d03352b4fa59.png",
+    "static/media/12.svg": "/static/media/12.cca5a63ce81b10127301eb913c03376d.svg",
     "index.html": "/index.html",
-    "main.84736297.css.map": "/static/css/main.84736297.css.map",
-    "main.b190e1b9.js.map": "/static/js/main.b190e1b9.js.map"
+    "main.993778b7.css.map": "/static/css/main.993778b7.css.map",
+    "main.524fbe7f.js.map": "/static/js/main.524fbe7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.84736297.css",
-    "static/js/main.b190e1b9.js"
+    "static/css/main.993778b7.css",
+    "static/js/main.524fbe7f.js"
   ]
 }

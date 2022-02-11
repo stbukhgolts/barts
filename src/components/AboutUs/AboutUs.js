@@ -1,10 +1,12 @@
 import React from 'react'
 import './AboutUs.scss'
 import img from '../../images/background.jpg';
+import quote from '../../images/quote.png';
 
 const AboutUs = () => {
   return (
     <div className="about-us" style={{ backgroundImage: `url(${img})` }}>
+    {/* <div className='quote' style={{ backgroundImage: `url(${quote})` }}></div> */}
     <p>
       Галерея ОРГАНИССИМО была основана как онлайн-магазин произведений
       искусства в 2020 году. Мы сосредоточены на конкретном, конструктивном

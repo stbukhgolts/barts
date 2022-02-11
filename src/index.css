@@ -1,6 +1,10 @@
 :root {
   --main-color: rgb(249, 253, 252);
   --font-color: rgba(255,255,255,1);
+  --org-color: rgb(0,38,29);
+  --org2-color: rgb(225,187,165);
+  --org3-color: rgb(134,9,15);
+  --org4--color: rgb(138,148,30);
   font-family: sans-serif;
   line-height: 1.5;
 }
@@ -8,4 +12,14 @@
 ul {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+li {
+  display: block;
 }

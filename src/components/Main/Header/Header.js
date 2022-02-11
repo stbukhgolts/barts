@@ -13,6 +13,8 @@ const Header = () => {
       <div>
         <Link to="/">ГЛАВНАЯ</Link>
         <Link to="artists">ХУДОЖНИКИ</Link>
+        <Link to="/about-us">О НАС</Link>
+        
       </div>
     </header>
   );

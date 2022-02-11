@@ -10,6 +10,9 @@
   flex-direction: column;
   align-items: center;
 
+  img {
+    filter: invert(12%) sepia(18%) saturate(2444%) hue-rotate(122deg) brightness(98%) contrast(104%);
+  }
 
   > ul {
     display: flex;

@@ -6,6 +6,7 @@ import Artists from '../Artists/Artists';
 import NotFound from '../NotFound/NotFound';
 import Work from '../Work/Work';
 import HomePage from '../HomePage/HomePage';
+import AboutUs from '../AboutUs/AboutUs';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route path="/artists" element={<Artists />} />
           <Route path="/artists/:artist" element={<Artist />} />
           <Route path="/artists/:artist/:work" element={<Work />} />
-
+          <Route path="/about-us" element={<AboutUs/>} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

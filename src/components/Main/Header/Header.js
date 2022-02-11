@@ -10,12 +10,12 @@ const Header = () => {
         <img src={logo} alt="logo" />
       </Link>
 
-      <div>
+      <nav>
         <Link to="/">ГЛАВНАЯ</Link>
         <Link to="artists">ХУДОЖНИКИ</Link>
         <Link to="/about-us">О НАС</Link>
         
-      </div>
+      </nav>
     </header>
   );
 };

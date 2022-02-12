@@ -1,8 +1,25 @@
 .home-page {
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+
+
+  .swiper {
+    height: 100%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: var(--org-color);
+  }
+  
+  .swiper-pagination {
+    bottom: 50px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--org-color);
+  }
 }
 
 .home-page-works-featured {
@@ -45,3 +62,4 @@
     padding: 0 155px;
   }
 }
+

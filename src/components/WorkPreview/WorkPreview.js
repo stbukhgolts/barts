@@ -5,17 +5,20 @@ import './WorkPreview.scss';
 const WorkPreview = ({ work, artist }) => {
 
   return (
-    <li className="work-preview">
+    <div className="work-preview">
     
       <Link to={`/artists/${artist}/${work.name}`} key={work.name}>
       <img src={work.src} alt="" />
+      
+      <p>
       {artist} - {work.name}
+      </p>
 
       
 
       </Link>
 
-    </li>
+    </div>
   );
 };
 

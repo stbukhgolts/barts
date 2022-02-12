@@ -1,0 +1,33 @@
+.artists {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+    font-size: 59px;
+    font-weight: 500;
+    letter-spacing: 15px;
+  }
+
+
+  .artists-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px;
+    gap: 15px;
+  }
+}
+
+
+
+@media all and (max-width: 600px) {
+  .artists-list {
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease-in;
+  }
+}

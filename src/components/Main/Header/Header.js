@@ -1,20 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.scss';
 import logo from '../../../images/logo.png';
 
 const Header = () => {
+  const location = useLocation();
+  console.log(location.pathname);
+
   return (
     <header className="header">
-      <Link to="/">
-        <img src={logo} alt="logo" />
-      </Link>
+      {location.pathname === '/' && (
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
+      )}
 
       <nav>
         <Link to="/">ГЛАВНАЯ</Link>
         <Link to="artists">ХУДОЖНИКИ</Link>
         <Link to="/about-us">О НАС</Link>
-        
       </nav>
     </header>
   );

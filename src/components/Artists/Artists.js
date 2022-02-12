@@ -1,7 +1,7 @@
 import React from 'react';
 import { getArtists } from '../../data';
 import ArtistPreview from '../ArtistPreview/ArtistPreview';
-import './Artists.css';
+import './Artists.scss';
 
 const Artists = () => {
   let artists = getArtists();

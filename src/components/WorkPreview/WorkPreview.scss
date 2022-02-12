@@ -27,6 +27,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   img {
     width: 100%;
     height: auto;
@@ -38,17 +39,24 @@
 }
 
 @media all and (max-width: 700px) {
-  .work-preview {
+  .work-preview:hover {
+    p{
+      opacity: .4;
+    }
   }
   .work-preview {
     img {
       // width: 140%;
-      filter: blur(45px);
+      filter: blur(15px);
       height: 700px;
       object-fit: cover;
       // transform: scale(80%);
       // object-position: 40% 50%;
     }
+    img:hover {
+      filter:blur(1px)
+    }
+
 
   }
 }

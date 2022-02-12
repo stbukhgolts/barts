@@ -37,7 +37,8 @@
 
 @media all and (max-width: 700px) {
   .header {
-  background-color: var(--main-color);
+    background-color: var(--main-color);
 
+    // border: red solid 1px;
   }
 }

@@ -1,21 +1,19 @@
 import React from 'react';
 import { getAllWorks } from '../../data';
-import WorkPreview from '../WorkPreview/WorkPreview';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import logo from '../../images/logo.png';
 
 import './HomePage.scss';
+import WorkPreviewHomepage from '../WorkPreviewHomepage/WorkPreviewHomepage';
 
 const HomePage = () => {
   let works = getAllWorks();
-
+  console.log(works)
   return (
     <div className="home-page">
-      {/* <img src={logo} alt='' /> */}
 
       <React.Fragment>
         <Swiper
@@ -28,7 +26,7 @@ const HomePage = () => {
         >
           {works.map((work) => (
             <SwiperSlide key={work[0].name} tag="li">
-              <WorkPreview work={work[0]} key={work[0].name} artist={work[1]} />
+              <WorkPreviewHomepage work={work[0]} key={work[0].name} artist={work[1]} />
             </SwiperSlide>
           ))}
         </Swiper>

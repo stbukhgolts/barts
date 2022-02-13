@@ -8,6 +8,13 @@
   .swiper {
     height: 700px;
   }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .swiper-button-next,
   .swiper-button-prev {

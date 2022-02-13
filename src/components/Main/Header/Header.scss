@@ -13,22 +13,19 @@
     // font-weight: 100;
   }
 
-
-
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 70%;
     // padding: 0 100px;
-    
+
     a {
       // margin-right: 22px;
       color: var(--org-color);
       font-weight: bold;
       text-decoration: none;
     }
-
   }
 
   img {
@@ -36,11 +33,13 @@
   }
 }
 
-
 @media all and (max-width: 700px) {
   .header {
     background-color: var(--main-color);
 
     // border: red solid 1px;
+    nav {
+      width: 90%;
+    }
   }
 }

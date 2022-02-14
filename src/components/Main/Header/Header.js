@@ -8,14 +8,14 @@ const Header = () => {
   console.log(location.pathname);
 
   return (
-    <header className="header">
+    <header className={`header`}>
       {location.pathname === '/' && (
         <Link to="/">
           <img src={logo} alt="logo" />
         </Link>
       )}
 
-      <nav>
+      <nav className={` ${location.pathname !== '/' ? 'fullwidth fixed' : ''}`}>
         <Link to="/">ГЛАВНАЯ</Link>
         <Link to="artists">ХУДОЖНИКИ</Link>
         <Link to="/about-us">О НАС</Link>

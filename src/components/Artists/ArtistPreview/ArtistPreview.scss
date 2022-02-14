@@ -1,0 +1,35 @@
+.artist-preview {
+  width: 100%;
+  filter: saturate(60%);
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover div {
+    display: block;
+  }
+
+  h2 {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-stretch:ultra-condensed;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &:hover {
+    filter: saturate(100%);
+  }
+}
+
+
+
+.artist-preview img {
+  width: 100%;
+}

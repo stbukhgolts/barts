@@ -4,19 +4,29 @@
   flex-direction: column;
   align-items: center;
 
-  h2 {
-    margin: 0 0 40px 0;
-    text-transform: uppercase;
-    font-size: 59px;
-    font-weight: 500;
-    letter-spacing: 15px;
+  .artists__heading{
+    margin: 115px 0;
+     > h2 {
+      text-align: center;
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 10.125rem;
+      font-weight: 500;
+      letter-spacing: 8px;
+      color: var(--org-color);
+      line-height: 1;
+    }
+  
+    > p {
+      text-align: center;
+    }
   }
 
 
   .artists-list {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 15px;
     gap: 15px;
   }

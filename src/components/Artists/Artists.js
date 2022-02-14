@@ -1,6 +1,6 @@
 import React from 'react';
 import { getArtists } from '../../data';
-import ArtistPreview from '../ArtistPreview/ArtistPreview';
+import ArtistPreview from './ArtistPreview/ArtistPreview';
 import './Artists.scss';
 
 const Artists = () => {
@@ -8,8 +8,11 @@ const Artists = () => {
 
   return (
     <div className="artists">
-      <h2>Список художников</h2>
+    <div className='artists__heading'>
+      <h2>художники</h2>
+
       <p>У нас есть оригинальные графические работы для продажи:</p>
+    </div>
 
       <ul className="artists-list">
         {artists.map((artist) => (

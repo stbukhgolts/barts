@@ -9,8 +9,7 @@ const ArtistPreview = ({ artist }) => {
         <img src={artist.src} alt="" />
 
         <div>
-          <p>{artist.name}</p>
-          <p>Check it out</p>
+          <h2>{artist.name}</h2>
         </div>
       </Link>
     </li>

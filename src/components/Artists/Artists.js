@@ -8,11 +8,11 @@ const Artists = () => {
 
   return (
     <div className="artists">
-    <div className='artists__heading'>
-      <h2>художники</h2>
+      <div className="artists__heading">
+        <h2>художники</h2>
 
-      <p>У нас есть оригинальные графические работы для продажи:</p>
-    </div>
+        <p>У нас есть оригинальные графические работы для продажи:</p>
+      </div>
 
       <ul className="artists-list">
         {artists.map((artist) => (

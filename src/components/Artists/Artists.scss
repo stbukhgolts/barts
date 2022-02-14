@@ -4,9 +4,9 @@
   flex-direction: column;
   align-items: center;
 
-  .artists__heading{
+  .artists__heading {
     margin: 115px 0;
-     > h2 {
+    > h2 {
       text-align: center;
       margin: 0;
       text-transform: uppercase;
@@ -16,12 +16,11 @@
       color: var(--org-color);
       line-height: 1;
     }
-  
+
     > p {
       text-align: center;
     }
   }
-
 
   .artists-list {
     list-style-type: none;
@@ -32,12 +31,43 @@
   }
 }
 
+@media all and (max-width: 1100px) {
+  .artists {
+    .artists__heading {
+      // margin: 75px 0;
+      > h2 {
+        font-size: 7.125rem;
+      }
+    }
+    .artists-list {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 15px;
+      gap: 15px;
+    }
 
-
-@media all and (max-width: 600px) {
-  .artists-list {
-    display: flex;
-    flex-direction: column;
-    transition: all 1s ease-in;
   }
+
+}
+
+
+@media all and (max-width: 800px) {
+  .artists {
+    .artists__heading {
+      // margin: 75px 0;
+      > h2 {
+        font-size: 4.125rem;
+        font-weight: 500;
+        letter-spacing: 4px;
+      }
+    }
+    .artists-list {
+      display: flex;
+      flex-direction: column;
+      transition: all 1s ease-in;
+    }
+
+  }
+
 }

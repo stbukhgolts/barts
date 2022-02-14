@@ -1,4 +1,5 @@
 .header {
+  margin: 0 10px;
   position: relative;
   height: auto;
   width: 100%;
@@ -6,24 +7,23 @@
   flex-direction: column;
   align-items: center;
   z-index: 2;
-  
+
   a {
     max-height: 200px;
     color: black;
     letter-spacing: 5px;
     // font-weight: 100;
   }
-  
+
   img {
     max-height: 200px;
     max-width: 100%;
   }
   nav {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 70%;
-    // padding: 0 100px;
     &.fullwidth {
       width: 100%;
       max-width: 1200px;
@@ -31,31 +31,42 @@
     &.fixed {
       padding: 14px 0;
       position: fixed;
-      z-index:0;
+      z-index: 0;
       background-color: #fff;
     }
-    > .active {
-
-      border-bottom: solid 2.3px var(--org-color);
-      padding-bottom: 0.1rem;
+    > .active:after{
+      width: 97%;
     }
-
+    
     a {
-      margin: 0 12px;
+      position: relative;
+      margin: 0 15px;
+      padding: 0 0;
       color: var(--org-color);
       font-weight: bold;
       text-decoration: none;
       line-height: 1;
       box-sizing: border-box;
       text-align: center;
-      &:hover {
 
+
+      &:after {
+        padding: 0;
+        content: "";
+        position: absolute;
+        background-color: var(--org-color);
+        height: 2.3px;
+        width: 0;
+        left: -1px;
+        bottom: -2px;
+      }
+      &:hover:after {
+        transition: 0.3s;
+        width: 97%;
       }
     }
   }
-
 }
-
 
 @media all and (max-width: 700px) {
   .header {

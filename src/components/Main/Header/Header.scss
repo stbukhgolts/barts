@@ -1,7 +1,8 @@
 .header {
   margin: 0 10px;
   position: relative;
-  height: auto;
+
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -75,6 +76,22 @@
     // border: red solid 1px;
     nav {
       width: 90%;
+
+      a {
+        font-size: 11px;
+
+      }
+    }
+  }
+}
+
+@media all and (max-width: 400px) {
+  .header {
+
+
+    // border: red solid 1px;
+    nav {
+
 
       a {
         font-size: 8px;

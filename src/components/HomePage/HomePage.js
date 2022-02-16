@@ -11,7 +11,7 @@ import WorkPreviewHomepage from '../WorkPreviewHomepage/WorkPreviewHomepage';
 
 const HomePage = () => {
   let works = getAllWorks();
-  console.log(works)
+
   return (
     <div className="home-page">
 

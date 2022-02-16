@@ -1,13 +1,14 @@
 .home-page {
   position: static;
-
+  min-height: 600px;
   // bottom:0;
   // height: 100%;
   width: 100%;
 
   .swiper {
-    height: 88vh;
-    width: 100vw;
+    height: 90vh;
+    width: 100%;
+    min-height: 400px;
   }
   
   .swiper-slide {

@@ -1,8 +1,9 @@
 .App {
   margin: auto;
-  height: 100vh;
+  /* height: 100vh; */
   display: block;
   max-width: 1200px;
+  min-height: 600px;
 }
 
 body{

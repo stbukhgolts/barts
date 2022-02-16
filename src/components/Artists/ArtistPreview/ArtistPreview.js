@@ -9,7 +9,7 @@ const ArtistPreview = ({ artist }) => {
         <img src={artist.src} alt="" />
 
         <div>
-          <h2>{artist.name}</h2>
+          <h2>{artist.name} {artist.years}</h2>
         </div>
       </Link>
     </li>

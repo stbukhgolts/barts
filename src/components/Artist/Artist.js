@@ -11,8 +11,15 @@ const Artist = () => {
 
   return (
     <div className="artist">
+      <div className="artist__hero">
+        <img src={works[0].src} alt="" />
+        <div className="artist__name-container">
+          <h2>{params.artist}</h2>
+          <p>{artist.years}</p>
+        </div>
+      </div>
+
       <div className="artist__desc">
-        <h2>{params.artist}</h2>
         <p>{artist.about}</p>
       </div>
 

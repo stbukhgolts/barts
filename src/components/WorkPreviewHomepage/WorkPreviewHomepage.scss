@@ -17,7 +17,7 @@
 
   div {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
@@ -69,7 +69,7 @@
     }
 
     h2 {
-      font-size: 1.125rem;
+      font-size: 2.125rem;
 
       margin: 50px 0 0 0;
     }
@@ -80,5 +80,14 @@
     p {
       font-size: 9px;
     }
+  }
+}
+
+@media all and (max-width: 450px) {
+  .work-preview-homepage {
+    h2 {
+      font-size: 1.125rem;
+    }
+
   }
 }

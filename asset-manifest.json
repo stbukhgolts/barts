@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd4a1071.css",
-    "main.js": "/static/js/main.6f6dfd1d.js",
+    "main.css": "/static/css/main.c1608a10.css",
+    "main.js": "/static/js/main.e2f214d8.js",
     "static/media/background.jpg": "/static/media/background.d87ec47e4970b24830b9.jpg",
     "static/media/Max Bill Composition géométrique 2.jpeg": "/static/media/Max Bill Composition géométrique 2.35a1829050fe8f02c495.jpeg",
     "static/media/Max Bill Composition géométrique.jpeg": "/static/media/Max Bill Composition géométrique.12cb7ee0d2db6df003dd.jpeg",
@@ -9,11 +9,11 @@
     "static/media/logo.png": "/static/media/logo.2ef4c573d03352b4fa59.png",
     "static/media/12.svg": "/static/media/12.cca5a63ce81b10127301eb913c03376d.svg",
     "index.html": "/index.html",
-    "main.bd4a1071.css.map": "/static/css/main.bd4a1071.css.map",
-    "main.6f6dfd1d.js.map": "/static/js/main.6f6dfd1d.js.map"
+    "main.c1608a10.css.map": "/static/css/main.c1608a10.css.map",
+    "main.e2f214d8.js.map": "/static/js/main.e2f214d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd4a1071.css",
-    "static/js/main.6f6dfd1d.js"
+    "static/css/main.c1608a10.css",
+    "static/js/main.e2f214d8.js"
   ]
 }

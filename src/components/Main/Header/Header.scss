@@ -26,9 +26,10 @@
     align-items: flex-start;
     justify-content: space-between;
     width: 70%;
+    max-width: 1000px;
     &.fullwidth {
       width: 100%;
-      max-width: 1200px;
+      max-width: 1600px;
     }
     &.fixed {
       padding: 14px 0;
@@ -40,7 +41,7 @@
       width: 97%;
     }
 
-    a {
+    >a {
       position: relative;
       margin: 0 15px;
       padding: 0 0;

@@ -7,6 +7,7 @@
 
   .artist__hero {
     display: flex;
+    border: 2px solid var(--org2-color);
 
     img {
       width: 50%;
@@ -21,6 +22,19 @@
       justify-content: center;
       background-color: var(--org2-color);
 
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 4.125rem;
+        line-height: 1;
+        transition: all 1s;
+      }
+
+      P {
+        font-size: 18px;
+        font-style: bold;
+      }
+
       h2, p {
         margin: 0;
         padding: 0;
@@ -32,27 +46,38 @@
 }
 
 .artist__desc {
+  padding: 50px 0;
   width: 50%;
 
   p {
+    text-align: center;
     font-size: 14px;
   }
 }
 
 .artist__works {
-  width: 50%;
+  width: 60%;
+  display: flex;
+  li {
+    margin-right: 25px;
+  }
 }
 
 @media all and (max-width: 600px) {
   .artist {
     flex-direction: column;
     .artist__hero {
+      width: 100%;
+      flex-direction: column;
       img {
         width: 100%;
         display: none;
       }
-      width: 100%;
-      flex-direction: column;
+      .artist__name-container {
+        h2 {
+          font-size: 1.255rem;
+        }
+      }
     }
   }
 
@@ -62,5 +87,22 @@
 
   .artist__works {
     width: 100%;
+    flex-direction: column;
+    margin-right: 15px;
   }
+}
+
+@media all and (max-width: 990px) {
+  .artist {
+
+    .artist__hero {
+
+      .artist__name-container {
+        h2 {
+          font-size: 2.255rem;
+        }
+      }
+    }
+  }
+
 }

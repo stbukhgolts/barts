@@ -20,6 +20,7 @@ let artists = [
         edition: '34 of 99',
         condition: 'Fair condition',
         dimensions: '70×70×0.1 cm',
+        price: '10000 Eur',
       },
     ],
   },
@@ -40,6 +41,7 @@ let artists = [
         edition: '',
         condition: '',
         dimensions: '46×64×0 cm',
+        price: '10000 Eur',
       },
       {
         name: 'Composition géométrique 2',
@@ -51,6 +53,8 @@ let artists = [
         edition: '',
         condition: 'Excellent condition',
         dimensions: '74×70×0 cm',
+        price: '10000 Eur',
+
       },
     ],
   },

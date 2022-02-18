@@ -1,0 +1,35 @@
+.work {
+  margin-top: 55px;
+  display: flex;
+  padding: 50px;
+  img {
+    width: 50%;
+    margin-right: 45px;
+  }
+  
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    a {
+      // text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+@media all and (max-width: 800px) {
+  .work {
+    flex-direction: column;
+    img {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    &__desc {
+      align-items: center;
+      height: 60vh;
+      
+    }
+  }
+}

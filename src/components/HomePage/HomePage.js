@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 
 import './HomePage.scss';
 import WorkPreviewHomepage from '../WorkPreviewHomepage/WorkPreviewHomepage';
+import Footer from '../Main/Footer/Footer';
 
 const HomePage = () => {
   let works = getAllWorks();
@@ -31,6 +32,8 @@ const HomePage = () => {
           ))}
         </Swiper>
       </React.Fragment>
+
+      <Footer />
 
       {/* <WorkPreview work={works[0][0]} key={works[0][0].name} artist={works[0][1]} /> */}
 

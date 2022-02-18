@@ -19,6 +19,8 @@ const Header = () => {
         <NavLink to="artists">ХУДОЖНИКИ</NavLink>
         <NavLink to="/about-us">О НАС</NavLink>
       </nav>
+
+      
     </header>
   );
 };

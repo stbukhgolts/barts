@@ -9,6 +9,20 @@
   align-items: center;
   z-index: 2;
 
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    margin: 0;
+    margin-left: 80px;
+    margin-bottom: 1px;
+    padding: 0;
+    letter-spacing: 80px;
+    color: var(--org-color)
+  }
+
   a {
     max-height: 200px;
     color: black;

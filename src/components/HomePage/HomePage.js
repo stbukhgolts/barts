@@ -9,40 +9,51 @@ import 'swiper/css/pagination';
 import './HomePage.scss';
 import WorkPreviewHomepage from '../WorkPreviewHomepage/WorkPreviewHomepage';
 import Footer from '../Main/Footer/Footer';
+import { motion } from 'framer-motion';
 
 const HomePage = () => {
   let works = getAllWorks();
 
   return (
-    <div className="home-page">
+    <motion.div
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ scaleY: 0 }}
+      transition={{ duration: 0.5}}
+    >
+      <div className="home-page">
+        <React.Fragment>
+          <Swiper
+            modules={[Navigation, Pagination]}
+            id="main"
+            tag="section"
+            wrapperTag="ul"
+            navigation
+            pagination={{ clickable: true }}
+          >
+            {works.map((work) => (
+              <SwiperSlide key={work[0].name} tag="li">
+                <WorkPreviewHomepage
+                  work={work[0]}
+                  key={work[0].name}
+                  artist={work[1]}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </React.Fragment>
 
-      <React.Fragment>
-        <Swiper
-          modules={[Navigation, Pagination]}
-          id="main"
-          tag="section"
-          wrapperTag="ul"
-          navigation
-          pagination={{ clickable: true }}
-        >
-          {works.map((work) => (
-            <SwiperSlide key={work[0].name} tag="li">
-              <WorkPreviewHomepage work={work[0]} key={work[0].name} artist={work[1]} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </React.Fragment>
+        <Footer />
 
-      <Footer />
+        {/* <WorkPreview work={works[0][0]} key={works[0][0].name} artist={works[0][1]} /> */}
 
-      {/* <WorkPreview work={works[0][0]} key={works[0][0].name} artist={works[0][1]} /> */}
-
-      {/* <ul className="home-page-works">
+        {/* <ul className="home-page-works">
         {works.map((work) => (
           <WorkPreview work={work[0]} key={work[0].name} artist={work[1]} />
         ))}
       </ul> */}
-    </div>
+      </div>
+    </motion.div>
   );
 };
 

@@ -6,9 +6,9 @@ const WorkPreviewHomepage = ({ work, artist }) => {
 
   return (
     <div className="work-preview-homepage">
-      <Link to={`/artists/${artist.name}/${work.name}`} key={work.name}>
         <img src={work.src} alt="" />
 
+      <Link to={`/artists/${artist.name}/${work.name}`} key={work.name}>
         <div>
           <h2>{artist.name} </h2>
           <p className='work-preview-homepage__artist-years'>{artist.years}</p>

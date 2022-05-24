@@ -9,9 +9,14 @@ const Header = () => {
   return (
     <header className='header'>
       {location.pathname === '/' && (
+        <div>
         <Link to="/">
           <img src={logo} alt="logo" />
+          
         </Link>
+        {/* <h1>АРТ ГАЛЕРЕЯ</h1> */}
+
+        </div>
       )}
 
       <nav className={` ${location.pathname !== '/' ? 'fullwidth fixed' : ''}`}>
